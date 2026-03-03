@@ -20,7 +20,7 @@ const AboutPage = () => {
             {/* Extended Information */}
             <section className="section bg-light">
                 <div className="container">
-                    <div className="grid" style={{ gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '5rem' }}>
 
                         <div className="mission-vision">
                             <h2 className="section-title">Our Mission & Vision</h2>

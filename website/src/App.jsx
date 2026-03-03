@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import WhatsAppButton from './components/WhatsAppButton';
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -30,6 +31,7 @@ function App() {
         </main>
 
         <Footer />
+        <WhatsAppButton />
       </div>
     </Router>
   );
