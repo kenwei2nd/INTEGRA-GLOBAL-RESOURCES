@@ -7,6 +7,7 @@ import {
     ShieldCheck,
     CheckCircle
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Services.css';
 
 const Services = () => {
@@ -94,7 +95,7 @@ const Services = () => {
 
                             <div className="why-us-cta">
                                 <p>Ready to secure your supply chain?</p>
-                                <a href="#contact" className="btn btn-primary">Contact Our Team</a>
+                                <Link to="/contact" className="btn btn-primary">Contact Our Team</Link>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,5 @@
 import { Droplet, Cookie, Factory, Package } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './Products.css';
 
 const Products = () => {
@@ -88,7 +89,7 @@ const Products = () => {
                             </div>
 
                             <div className="card-footer">
-                                <a href="#contact" className="card-link">Request Quote &rarr;</a>
+                                <Link to="/contact" className="card-link">Request Quote &rarr;</Link>
                             </div>
                         </div>
                     ))}
