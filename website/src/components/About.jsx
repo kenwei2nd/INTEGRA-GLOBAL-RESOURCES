@@ -58,7 +58,7 @@ const About = () => {
                             </ul>
 
                             <div className="reg-image-wrapper">
-                                <img src="/src/assets/IMG_0255.JPG" alt="Corporate Logistics" className="reg-image" />
+                                <img src="/images/IMG_0255.JPG" alt="Corporate Logistics" className="reg-image" />
                                 <div className="image-overlay"></div>
                             </div>
                         </div>

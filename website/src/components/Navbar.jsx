@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'navbar-scrolled glass-card' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="navbar-logo">
-          <img src="/src/assets/LOGO.jpg" alt="Integra Global Resources Logo" className="logo-img" />
+          <img src="/images/LOGO.jpg" alt="Integra Global Resources Logo" className="logo-img" />
           <div className="logo-text">
             <span className="logo-title">INTEGRA</span>
             <span className="logo-subtitle">GLOBAL RESOURCES</span>

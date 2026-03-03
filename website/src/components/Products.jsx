@@ -15,7 +15,7 @@ const Products = () => {
                 'Vegetable Shortening / Vegetable Fat',
                 'Refined Coconut Oil'
             ],
-            image: '/src/assets/IMG_0266.JPG'
+            image: '/images/IMG_0266.JPG'
         },
         {
             id: 2,
@@ -27,7 +27,7 @@ const Products = () => {
                 'Cocoa Butter',
                 'Cocoa Powder'
             ],
-            image: '/src/assets/IMG_0257.WEBP'
+            image: '/images/IMG_0257.WEBP'
         },
         {
             id: 3,
@@ -38,7 +38,7 @@ const Products = () => {
                 'Latex Concentrate',
                 'Industrial Rubber Products'
             ],
-            image: '/src/assets/IMG_0263.WEBP'
+            image: '/images/IMG_0263.WEBP'
         },
         {
             id: 4,
@@ -50,7 +50,7 @@ const Products = () => {
                 'Electrical Appliances',
                 'Selected FMCG Products'
             ],
-            image: '/src/assets/IMG_0256.JPG'
+            image: '/images/IMG_0256.JPG'
         }
     ];
 

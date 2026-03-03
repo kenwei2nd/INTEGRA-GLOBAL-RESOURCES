@@ -4,7 +4,7 @@
     min-height: 600px;
     display: flex;
     align-items: center;
-    background-image: url('../assets/IMG_0267.JPG');
+    background-image: url('/images/IMG_0267.JPG');
     /* Using one of the provided images, assuming it's a good background (port/cargo) */
     background-size: cover;
     background-position: center;
