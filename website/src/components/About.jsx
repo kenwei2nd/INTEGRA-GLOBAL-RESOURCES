@@ -15,7 +15,7 @@ const About = () => {
                         </h2>
 
                         <p className="about-lead">
-                            Headquartered in Malaysia, INTEGRA GLOBAL RESOURCES SDN. BHD. is an international commodity trading and export company committed to structured, transparent, and compliant trade execution.
+                            Headquartered in Malaysia, IGR is an international commodity trading and export company committed to structured, transparent, and compliant trade execution.
                         </p>
 
                         <p className="about-text">
@@ -58,7 +58,7 @@ const About = () => {
                             </ul>
 
                             <div className="reg-image-wrapper">
-                                <img src="/images/IMG_0255.JPG" alt="Corporate Logistics" className="reg-image" />
+                                <img src="/images/IMG_0267.JPG" alt="Corporate Logistics" className="reg-image" />
                                 <div className="image-overlay"></div>
                             </div>
                         </div>

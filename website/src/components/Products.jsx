@@ -16,7 +16,7 @@ const Products = () => {
                 'Vegetable Shortening / Vegetable Fat',
                 'Refined Coconut Oil'
             ],
-            image: '/images/IMG_0266.JPG'
+            image: '/images/IMG_0255.JPG'
         },
         {
             id: 2,
@@ -51,7 +51,7 @@ const Products = () => {
                 'Electrical Appliances',
                 'Selected FMCG Products'
             ],
-            image: '/images/IMG_0256.JPG'
+            image: '/images/general-merchandise.png'
         }
     ];
 
@@ -60,10 +60,11 @@ const Products = () => {
             <div className="container">
                 <div className="section-header">
                     <h5 className="section-label">Our Products</h5>
-                    <h2 className="section-title">Global Sourcing Capabilities</h2>
+                    <h2 className="section-title">GLOBAL BUYER NETWORK</h2>
                     <p className="section-subtitle">
-                        We supply a diverse range of premium commodities and industrial materials,
-                        sourced directly from trusted producers in Southeast Asia and beyond.
+                        Integra Global Resources(IGR) maintains access to a wide database of international buyers across key global markets. Our operations are supported by structured market research, verified trade data, and active buyer intelligence.
+                        <br /><br />
+                        We analyze demand trends, pricing movements, and import activity to identify genuine purchasing interest. This allows us to target the right markets and engage with buyers efficiently and professionally.
                     </p>
                 </div>
 

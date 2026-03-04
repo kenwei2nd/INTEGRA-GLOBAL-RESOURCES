@@ -13,7 +13,7 @@ const Hero = () => {
                         <span className="text-gradient">International Buyers</span>
                     </h1>
                     <p className="hero-description">
-                        INTEGRA GLOBAL RESOURCES SDN. BHD. is a Malaysia-based export trading company specializing in the international trade of agricultural commodities, soft commodities, industrial raw materials, and general merchandise.
+                        IGR is a Malaysia-based export trading company specializing in the international trade of agricultural commodities, soft commodities, industrial raw materials, and general merchandise.
                     </p>
                     <div className="hero-actions">
                         <Link to="/contact" className="btn btn-primary">Partner With Us</Link>

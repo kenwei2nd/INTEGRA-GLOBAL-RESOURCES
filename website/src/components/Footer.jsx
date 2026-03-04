@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer-grid">
                     {/* Company Info */}
                     <div className="footer-col about-col">
-                        <h3 className="footer-title">INTEGRA GLOBAL RESOURCES</h3>
+                        <h3 className="footer-title">INTEGRA GLOBAL RESOURCES SDN. BHD.</h3>
                         <p className="footer-reg">Registration No.: 202501054518 (1655924-K)</p>
                         <p className="footer-desc">
                             A Malaysia-based global commodity trading and export intermediary bridging trusted suppliers with serious international buyers.
@@ -59,7 +59,7 @@ const Footer = () => {
                 <div className="footer-disclaimer">
                     <h5>Legal Disclaimer</h5>
                     <p>
-                        INTEGRA GLOBAL RESOURCES SDN. BHD. operates as an international trading and export company. All product offers are subject to availability, formal quotation, and mutually executed sales contracts. Specifications, pricing, and delivery terms are subject to change based on market conditions and supplier confirmation. All transactions are conducted in accordance with applicable international trade laws and regulations.
+                        IGR operates as an international trading and export company. All product offers are subject to availability, formal quotation, and mutually executed sales contracts. Specifications, pricing, and delivery terms are subject to change based on market conditions and supplier confirmation. All transactions are conducted in accordance with applicable international trade laws and regulations.
                     </p>
                     <p className="footer-warning">
                         Prospective buyers are advised to conduct independent due diligence prior to entering into any contractual agreement.

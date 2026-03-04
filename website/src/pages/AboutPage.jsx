@@ -9,7 +9,7 @@ const AboutPage = () => {
                 <div className="container">
                     <h1 className="text-gradient" style={{ fontSize: '3rem', marginBottom: '1rem' }}>Corporate Identity</h1>
                     <p style={{ color: 'var(--text-muted)', maxWidth: '600px', margin: '0 auto' }}>
-                        A deep dive into Integra Global Resources' history, mission, and commitment to international trade excellence.
+                        A deep dive into IGR's history, mission, and commitment to international trade excellence.
                     </p>
                 </div>
             </section>

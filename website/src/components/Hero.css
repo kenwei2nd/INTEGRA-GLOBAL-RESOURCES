@@ -4,7 +4,7 @@
     min-height: 600px;
     display: flex;
     align-items: center;
-    background-image: url('/images/IMG_0267.JPG');
+    background-image: url('/images/IMG_0266.JPG');
     /* Using one of the provided images, assuming it's a good background (port/cargo) */
     background-size: cover;
     background-position: center;
@@ -143,10 +143,26 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+        min-height: 800px;
+        height: auto;
+    }
+
     .hero-overlay {
         background: linear-gradient(180deg,
                 rgba(15, 23, 42, 0.8) 0%,
                 rgba(15, 23, 42, 0.95) 100%);
+    }
+
+    .hero-container {
+        /* Add responsive padding-top to prevent logo overlap */
+        /* clamp(min, pref, max) ensures it looks good on SE and Pro Max */
+        padding-top: clamp(80px, 15vh, 120px);
+        padding-bottom: 80px;
+    }
+
+    .hero-content {
+        margin-top: 2rem;
     }
 
     .hero-actions {
@@ -156,5 +172,10 @@
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    /* Hide scroll indicator to prevent CTA overlap */
+    .scroll-indicator {
+        display: none;
     }
 }

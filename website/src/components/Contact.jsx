@@ -2,6 +2,23 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const phone = form.phone.value || 'N/A';
+        const interest = form.interest.options[form.interest.selectedIndex].text;
+        const message = form.message.value;
+
+        const subject = `Trade Inquiry: ${interest}`;
+        const body = `*New Inquiry via IGR Website*%0A%0A*Name/Company:* ${name}%0A*Email:* ${email}%0A*Phone/WhatsApp:* ${phone}%0A*Commodity of Interest:* ${interest}%0A%0A*Requirements:*%0A${message}`;
+
+        // Redirect to WhatsApp API
+        const whatsappNumber = "601137239521"; // Number without +
+        window.open(`https://wa.me/${whatsappNumber}?text=${body}`, '_blank');
+    };
+
     return (
         <section id="contact" className="section contact">
             <div className="container">
@@ -62,27 +79,27 @@ const Contact = () => {
                     {/* Contact Form */}
                     <div className="contact-form-wrapper glass-card">
                         <h3 className="form-title">Send an Inquiry</h3>
-                        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+                        <form className="contact-form" onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="name">Full Name or Company</label>
-                                <input type="text" id="name" placeholder="E.g., John Doe / ABC Corp" required />
+                                <input type="text" id="name" name="name" placeholder="E.g., John Doe / ABC Corp" required />
                             </div>
 
                             <div className="form-row">
                                 <div className="form-group">
                                     <label htmlFor="email">Email Address</label>
-                                    <input type="email" id="email" placeholder="john@example.com" required />
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="phone">Phone / WhatsApp</label>
-                                    <input type="tel" id="phone" placeholder="+1 234 567 8900" />
+                                    <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" />
                                 </div>
                             </div>
 
                             <div className="form-group">
                                 <label htmlFor="interest">Primary Commodity of Interest</label>
-                                <select id="interest" required>
-                                    <option value="" disabled selected>Select a product...</option>
+                                <select id="interest" name="interest" required defaultValue="">
+                                    <option value="" disabled>Select a product...</option>
                                     <option value="palm-oil">RBD Palm Oil / Olein</option>
                                     <option value="cocoa">Cocoa & Soft Commodities</option>
                                     <option value="rubber">Natural Rubber / Latex</option>
@@ -93,7 +110,7 @@ const Contact = () => {
 
                             <div className="form-group">
                                 <label htmlFor="message">Message / Requirements</label>
-                                <textarea id="message" rows="4" placeholder="Please specify quantity, destination port, and other terms..." required></textarea>
+                                <textarea id="message" name="message" rows="4" placeholder="Please specify quantity, destination port, and other terms..." required></textarea>
                             </div>
 
                             <button type="submit" className="btn btn-primary submit-btn">

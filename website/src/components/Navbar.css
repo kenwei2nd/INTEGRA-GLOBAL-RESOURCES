@@ -3,7 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--nav-height);
+    padding: 25px 0 15px 0;
+    /* Increased top padding */
     z-index: 1000;
     transition: all 0.3s ease;
     background-color: transparent;
@@ -11,20 +12,23 @@
 
 .navbar-scrolled {
     background-color: var(--glass-bg);
-    height: 70px;
+    padding: 15px 0;
 }
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    position: relative;
     height: 100%;
 }
 
 .navbar-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo-img {
@@ -34,36 +38,7 @@
     object-fit: cover;
 }
 
-.logo-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-title {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--bg-light);
-    letter-spacing: 1px;
-    line-height: 1;
-    transition: color 0.3s ease;
-}
-
-.navbar-scrolled .logo-title {
-    color: var(--primary-color);
-}
-
-.logo-subtitle {
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.8);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-
-.navbar-scrolled .logo-subtitle {
-    color: var(--text-muted);
-}
+/* Removed logo-text classes */
 
 /* Desktop Menu */
 .navbar-menu {
@@ -166,11 +141,13 @@
 .hamburger.open::before {
     top: 0;
     transform: rotate(45deg);
+    background-color: var(--primary-color);
 }
 
 .hamburger.open::after {
     bottom: 0;
     transform: rotate(-45deg);
+    background-color: var(--primary-color);
 }
 
 /* Mobile Menu Overlay */
